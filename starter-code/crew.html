@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href=".\css\crew.css">
+  <link rel="stylesheet" href=".\css\shared.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+<body class="all">
+
+
+
+  <nav class="nav">
+    <img class="nav__logo"src="css/assets/shared/logo.svg" alt="star logo">
+    <div class="nav__line"></div>
+    <button class="nav__btn" type="button" name="button">
+      <span class="bar1"></span>
+      <span class="bar2"></span>
+      <span class="bar3"></span>
+    </button>
+    <menu class="nav__menu nav--text nav__menu--hidden">
+      <li><a id="home" class="nav__menu__btn underline" href="index.html"><span class="btn--number">00</span>home</a></li>
+      <li><a id="destination" class="nav__menu__btn underline" href="destination.html"><span class="btn--number">01</span>destination</a></li>
+      <li><a id="crew" class="nav__menu__btn btn--current underline" href="crew.html"><span class="btn--number">02</span>crew</a></li>
+      <li><a id="technology" class="nav__menu__btn underline" href="technology.html"><span class="btn--number">03</span>technology</a></li>
+    </menu>
+  </nav>
+
+  <main>
+    <div class="container">
+      <div class="container__col1">
+        <h1 class="h--5 header"><span class="number">02</span>Meet your crew</h1>
+        <h3 id="role" class="h--4">commander</h3>
+        <h2 id="name" class="h--3">douglas hurley</h2>
+        <p id="bio" class="body--text">Douglas Gerald Hurley is an American engineer, former Marine Corps pilot
+        and former NASA astronaut. He launched into space for the third time as
+        commander of Crew Dragon Demo-2.</p>
+        <div class="container__col1__buttons">
+          <button id="0" class="btn active" type="button" name="button" aria-label="change commander"></button>
+          <button id="1" class="btn" type="button" name="button" aria-label="change commander"></button>
+          <button id="2" class="btn" type="button" name="button" aria-label="change commander"></button>
+          <button id="3" class="btn" type="button" name="button" aria-label="change commander"></button>
+        </div>
+      </div>
+      <div class="container__col2 img--container">
+        <img id="image" class="container__col2" src="css/assets/crew/image-douglas-hurley.png" alt="commander image">
+      </div>
+
+    </div>
+  </main>
+
+
+
+<script src=".\js\shared.js"></script>
+<script src=".\js\crew.js""></script>
+</body>
+</html>

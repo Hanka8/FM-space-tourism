@@ -1,0 +1,171 @@
+.all {
+  background-image: url("assets/destination/background-destination-desktop.jpg");
+}
+
+
+/* ________________________________________________________main */
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 157px;
+  margin-left: 16%;
+  margin-right: 11.3%;
+  height: 472px;
+}
+
+.conatainer__col1 {
+  width: 445px;
+  aspect-ratio: 1;
+}
+
+.conatainer__col2 {
+  align-self: flex-start;
+}
+
+.nav__menu__small {
+  height: calc(34rem/16);
+  width: calc(285rem/16);
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/* to make underline effect */
+.underline--small {
+  position: relative;
+  color: var(--light-blue);
+}
+.underline--small::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 0;
+  height: 3px;
+  background-color: white;
+  top: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: .3s;
+}
+.underline--small:hover::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 110%;
+  height: 3px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 130%;
+}
+
+/* to make active underline effect */
+.active {
+  color: white;
+}
+
+.active::after  {
+  position: absolute;
+  content: "";
+  inset: 0;
+  width: 110%;
+  height: 3px;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 130%;
+}
+
+
+.conatainer__col2 menu {
+  margin-bottom: calc(37rem/16);
+}
+
+.conatainer__col2 h2 {
+  margin-bottom: calc(14rem/16);
+}
+
+.conatainer__col2 .body--text {
+  margin-bottom: calc(54rem/16);
+}
+
+.col2--line {
+  width: 100%;
+  color: #383B4B;
+  border: none;
+  border-bottom: 1px solid;
+  margin-bottom: calc(28rem/16);
+}
+
+/* _________________________________________________________footer */
+
+.conatainer__col2__footer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 17.8%;
+}
+
+.conatainer__col2__footer__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: calc(12rem/16);
+  align-items: flex-start;
+}
+
+
+/* ################### MEDIA ##################### */
+
+
+@media(max-width: 60rem) {
+  .all {
+    background-image: url("assets/destination/background-destination-tablet.jpg");
+  }
+  .header {
+    margin-left: 38.5px;
+  }
+  .container {
+    flex-wrap: wrap;
+    text-align: center;
+    gap: calc(53rem/16);
+  }
+  .conatainer__col1 {
+    width: 52.9%;
+  }
+  .nav__menu__small {
+    justify-content: center;
+    width: 100%;
+    gap: 4.55%;
+  }
+  .conatainer__col2__footer {
+    justify-content: center;
+  }
+  .conatainer__col2__footer__col {
+    align-items: center;
+  }
+
+}
+
+  @media(max-width:32rem) {
+    .all {
+      background-image: url("assets/destination/background-destination-mobile.jpg");
+    }
+    .header {
+      display: block;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .container {
+      margin-left: 16px;
+      margin-right: 16px;
+    }
+    .conatainer__col2__footer {
+      flex-direction: column;
+      gap: 2rem;
+    }
+}
