@@ -1,0 +1,13 @@
+.all {
+  background-image: url("assets/technology/background-technology-desktop.jpg");
+}
+
+@media(max-width: 60rem) {
+  .all {
+    background-image: url("assets/technology/background-technology-tablet.jpg");
+  }
+
+  @media(max-width:32rem) {
+    .all {
+      background-image: url("assets/technology/background-technology-mobile.jpg");
+    }
