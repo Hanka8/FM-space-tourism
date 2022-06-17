@@ -2,12 +2,139 @@
   background-image: url("assets/technology/background-technology-desktop.jpg");
 }
 
+.header {
+  margin-bottom: 26px;
+}
+
+.main {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.container {
+  margin-left: 11.56%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__buttons {
+  margin-right: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.container__text {
+  width: calc(470rem/16);
+  margin-right: calc(130rem/16);
+}
+
+.container__img {
+  flex-grow: 1;
+}
+
+.container__img img {
+  width: 100%;
+}
+
+.nav--text {
+  color: var(--light-blue);
+}
+
+.body--text {
+  margin-bottom: 2rem;
+}
+
+.btn {
+  border: 1px solid hsla(0, 0%, 100%, 0.25);
+  background: transparent;
+  color: white;
+  font-size: 2rem;
+  line-height: calc(36.7rem/16);
+  letter-spacing: 2px;
+  font-weight: 400;
+  width: 80px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover {
+  border: 1px solid white;
+}
+
+.btn.active {
+  background-color: white;
+  color: black;
+}
+
+.nav--text {
+  margin-bottom: 11px;
+}
+
+.h--3 {
+  margin-bottom: 17px;
+}
+
 @media(max-width: 60rem) {
   .all {
     background-image: url("assets/technology/background-technology-tablet.jpg");
+  }
+  .main {
+    display: block;
+  }
+  .header {
+    margin-left: 38.5px;
+    margin-bottom: 60px;
+  }
+  .container {
+    flex-direction: column;
+    margin-left: 0;
+  }
+  .container__img {
+    order:1;
+    align-self: stretch;
+    margin-bottom: 56px;
+  }
+  .container__buttons {
+    order: 2;
+    align-self: center;
+    margin-right: 0;
+    flex-direction: row;
+    gap: 16px;
+    margin-bottom: 44px;
+    flex-shrink: 1;
+  }
+  .container__text {
+    order: 3;
+    align-self: center;
+    text-align: center;
+    margin-right: 0;
+    width: auto;
+    margin-inline: 20%;
+  }
+
+  .btn {
+    width: 60px;
+    font-size: calc(24rem/16);
+    line-height: calc(27.5rem/16);
   }
 
   @media(max-width:32rem) {
     .all {
       background-image: url("assets/technology/background-technology-mobile.jpg");
     }
+    .container__text {
+      margin-inline: 24px;
+    }
+    .nav--text {
+      font-size: calc(14rem/16);
+    }
+    .header {
+      margin-left: 0;
+      text-align: center;
+    }
+  }

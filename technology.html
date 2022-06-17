@@ -5,16 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href=".\css\technology.css">
   <link rel="stylesheet" href=".\css\shared.css">
+  <link rel="stylesheet" href=".\css\technology.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed&family=Bellefair&display=swap" rel="stylesheet">
   <title>Frontend Mentor | Space tourism website</title>
 </head>
 <body class="all">
-
-
 
   <nav class="nav">
     <img class="nav__logo"src="css/assets/shared/logo.svg" alt="star logo">
@@ -32,20 +30,31 @@
     </menu>
   </nav>
 
-  03 Space launch 101
+  <h1 class="header"><span class="number">03</span>Space launch 101</h1>
 
-  1
-  2
-  3
-
-  The terminology...
-  Space capsule
-
-  A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
-  capsule to reenter the Earth's atmosphere without wings. Our capsule is where
-  you'll spend your time during the flight. It includes a space gym, cinema,
-  and plenty of other activities to keep you entertained.
+  <main class="main">
+    <div class="container">
+      <div class="container__buttons">
+        <button id="0" class="btn active" type="button" name="button">1</button>
+        <button id="1" class="btn" type="button" name="button">2</button>
+        <button id="2" class="btn" type="button" name="button">3</button>
+      </div>
+      <div class="container__text">
+        <h3 class="nav--text">The terminology...</h3>
+        <h2 id="name" class="h--3">Space capsule</h2>
+        <p id="description" class="body--text">A space capsule is an often-crewed spacecraft that uses a blunt-body reentry
+        capsule to reenter the Earth's atmosphere without wings. Our capsule is where
+        you'll spend your time during the flight. It includes a space gym, cinema,
+        and plenty of other activities to keep you entertained.</p>
+      </div>
+      <picture class="container__img">
+        <source id="imgSmall" srcset="css/assets/technology/image-launch-vehicle-landscape.jpg" media="(max-width:960px)">
+        <img id="img" src="css/assets/technology/image-launch-vehicle-portrait.jpg" alt="launched vehicle">
+      </picture>
+    </div>
+  </main>
 
 <script src=".\js\shared.js"></script>
+<script src=".\js\technology.js"></script>
 </body>
 </html>
