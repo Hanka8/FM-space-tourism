@@ -1,15 +1,4 @@
-// toggling active state to button
 
-const planetBtns = document.querySelectorAll(".nav__menu__btn");
-
-planetBtns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    planetBtns.forEach((buttie) => {
-      buttie.classList.remove("active");
-    })
-    btn.classList.add("active");
-  })
-});
 
 // dom elements changed
 const name = document.getElementById("name");
@@ -34,7 +23,7 @@ const getData = async (what) => {
   travel.textContent = destinations.travel;
 }
 
-planetBtns.forEach((btn) => {
+btns.forEach((btn) => {
   btn.addEventListener("click", () => {
     getData(btn.id);
   });

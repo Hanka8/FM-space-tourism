@@ -1,15 +1,4 @@
-// toggling active state to button
 
-const btns = document.querySelectorAll(".btn");
-
-btns.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    btns.forEach((buttie) => {
-      buttie.classList.remove("active");
-    })
-    btn.classList.add("active");
-  })
-});
 
 // dom elements changed
 const name = document.getElementById("name");

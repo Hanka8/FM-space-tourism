@@ -153,6 +153,7 @@
   @media(max-width:32rem) {
     .all {
       background-image: url("assets/destination/background-destination-mobile.jpg");
+      margin-bottom: 15%;
     }
     .header {
       display: block;
