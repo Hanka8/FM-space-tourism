@@ -163,7 +163,7 @@ h1.header {
     .container__col2.img--container {
       position: relative;
       inset: 0;
-      min-height: 239.717px;
+      height: 239.717px;
       align-self: center;
     }
     .img--container::after {
