@@ -12,7 +12,7 @@
   gap: 157px;
   margin-left: 16%;
   margin-right: 11.3%;
-  height: 472px;
+  min-height: 472px;
 }
 
 .conatainer__col1 {
