@@ -79,6 +79,12 @@
   margin-bottom: 17px;
 }
 
+@media (min-width: 91rem) {
+  .main {
+    justify-content: flex-start;
+  }
+}
+
 @media(max-width: 60rem) {
   .all {
     background-image: url("assets/technology/background-technology-tablet.jpg");
